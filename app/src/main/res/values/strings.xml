@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">die_rolling_app</string>
+
+    <!-- strings.xml -->
+    <string name="result">Result: %s</string>
+    <string name="result_twice">Results: %s, %s</string>
+<string-array name="dice_types">
+<item>4-sided</item>
+<item>6-sided</item>
+<item>8-sided</item>
+<item>10-sided</item>
+<item>12-sided</item>
+<item>20-sided</item>
+<item>Custom</item>
+</string-array>
+</resources>

@@ -1,0 +1,59 @@
+<!-- activity_main.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinnerDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+         />
+
+    <EditText
+        android:id="@+id/editTextCustomSides"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerDice"
+        android:layout_marginTop="16dp"
+        android:hint="Enter number of sides"
+        android:inputType="number"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonRoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCustomSides"
+        android:layout_marginTop="16dp"
+        android:text="Roll" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRollTwice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRoll"
+        android:layout_marginTop="8dp"
+        android:text="Roll Twice" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxRollTwice"
+        android:layout_marginTop="16dp"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonClear"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
