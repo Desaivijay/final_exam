@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     sharedPreferences = getSharedPreferences("MyDicePrefs", Context.MODE_PRIVATE)
 
     // Set up dice spinner
-    val diceOptions = arrayOf("4", "6", "8", "10", "12", "20", "Custom")
+    val diceOptions = arrayOf("4", "6", "8", "10", "12", "20")
     val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, diceOptions)
     binding.spinnerDice.adapter = adapter
 
@@ -49,15 +49,7 @@ class MainActivity : AppCompatActivity() {
         binding.textViewResult.text = getString(R.string.result_twice, result1.toString(), result2.toString())
     }
 
-    // Set up custom dice save button click listener
-   // binding.saveCustomDiceButton.setOnClickListener {
-   //     onSaveCustomDice(binding.customDiceEditText.text.toString().trim())
-  //  }
 
-    // Set up custom dice load button click listener
-   // binding.loadCustome.setOnClickListener {
-    //    onLoadCustomDice()
-   // }
 }
 
 private fun rollDice(maxValue: Int): Int {
