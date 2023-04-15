@@ -15,22 +15,13 @@
         android:layout_marginTop="16dp"
          />
 
-    <EditText
-        android:id="@+id/editTextCustomSides"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/spinnerDice"
-        android:layout_marginTop="16dp"
-        android:hint="Enter number of sides"
-        android:inputType="number"
-        android:visibility="gone" />
+
 
     <Button
         android:id="@+id/buttonRoll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextCustomSides"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="56dp"
         android:text="Roll" />
 
     <CheckBox

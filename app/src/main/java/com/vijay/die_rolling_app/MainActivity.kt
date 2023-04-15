@@ -6,7 +6,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.vijay.die_rolling_app.databinding.ActivityMainBinding
-import java.util.*
+import kotlin.random.Random
 
 
 
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 }
 
 private fun rollDice(maxValue: Int): Int {
-    val random = Random()
+    val random = Random
     return random.nextInt(maxValue) + 1
 }
 
@@ -66,8 +66,5 @@ private fun onSaveCustomDice(customDiceValue: String) {
     }
 }
 
-private fun onLoadCustomDice() {
-    val customDiceValue = sharedPreferences.getString("customDiceValue", "")
-    binding.editTextCustomSides.setText(customDiceValue)
-}
+
 }
