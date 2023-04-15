@@ -1,4 +1,4 @@
- <!-- activity_main.xml -->
+
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
+        style="@style/SpinnerStyle"
          />
 
 
@@ -22,7 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:text="Roll" />
+        android:text="Roll"
+        style="@style/ButtonStyle"/>
 
     <CheckBox
         android:id="@+id/checkBoxRollTwice"
@@ -30,7 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonRoll"
         android:layout_marginTop="8dp"
-        android:text="Roll Twice" />
+        android:text="Roll Twice"
+        style="@style/CheckBoxStyle"/>
 
     <Button
         android:id="@+id/buttonClear"
@@ -38,13 +41,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/checkBoxRollTwice"
         android:layout_marginTop="16dp"
-        android:text="Clear" />
+        android:text="Clear"
+        style="@style/ButtonStyle"/>
 
     <TextView
         android:id="@+id/textViewResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonClear"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        style="@style/TextViewStyle"/>
 
 </RelativeLayout>
